@@ -1,19 +1,19 @@
 // vite.config.js
 
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
 
 export default defineConfig({
-    base:"./tokki_world",
+  base: "/tokkiworld/",
   build: {
-    outDir: 'dist',
-    assetsInclude: ['**/*.html', '**/*.js', '**/*.css', '**/*.glb', '**/*/*.glb'],
+    outDir: "dist",
+    assetsInclude: ["**/*.glb"],
     rollupOptions: {
       treeshake: false,
     },
   },
   resolve: {
     alias: {
-      three: 'three', // 이 부분을 확인하세요.
+      three: "three", // 이 부분을 확인하세요.
     },
   },
 });
